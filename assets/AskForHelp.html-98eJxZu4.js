@@ -1,0 +1,1 @@
+import{_ as t}from"./plugin-vue_export-helper-x3n3nnut.js";import{o,c as r,a as e,b as a}from"./app-VPmzSzNo.js";const s={},c=e("h1",{id:"寻求帮助",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#寻求帮助","aria-hidden":"true"},"#"),a(" 寻求帮助")],-1),n=[c];function _(d,i){return o(),r("div",null,n)}const f=t(s,[["render",_],["__file","AskForHelp.html.vue"]]);export{f as default};

@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o,c}from"./app-VPmzSzNo.js";const n={};function r(t,_){return o(),c("h2",null,"Hello Vue!")}const a=e(n,[["render",r],["__file","Logging.vue"]]);export{a as default};

@@ -3,7 +3,7 @@ import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "github url",
+  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
     name: "Mini_Ye",
@@ -64,55 +64,33 @@ export default hopeTheme({
     },
   },
 
+  // 在这里配置主题提供的插件
   plugins: {
-    // If you don’t need comment feature, you can remove following option
-    // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
-    // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    // comment: {
-    //   /**
-    //    * Using Giscus
-    //    */
-    //   // provider: "Giscus",
-    //   // repo: "vuepress-theme-hope/giscus-discussions",
-    //   // repoId: "R_kgDOG_Pt2A",
-    //   // category: "Announcements",
-    //   // categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // 你应该自行生成自己的评论服务
+    comment: {
+      provider: "Giscus",
+      repo: "vuepress-theme-hope/giscus-discussions",
+      repoId: "R_kgDOG_Pt2A",
+      category: "Announcements",
+      categoryId: "DIC_kwDOG_Pt2M4COD69",
+    },
 
-    //   /**
-    //    * Using Twikoo
-    //    */
-    //   // provider: "Twikoo",
-    //   // envId: "https://twikoo.ccknbc.vercel.app",
+    components: {
+      components: ["Badge", "VPCard"],
+    },
 
-    //   /**
-    //    * Using Waline
-    //    */
-    //   provider: "Waline",
-    //   serverURL: "https://vuepress-theme-hope-comment.vercel.app",
-    // },
-
-    // Disable features you don’t want here
+    // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
       codetabs: true,
-      container: true,
+      component: true,
       demo: true,
-      echarts: true,
       figure: true,
-      flowchart: true,
-      gfm: true,
       imgLazyload: true,
       imgSize: true,
       include: true,
-      katex: true,
       mark: true,
-      mermaid: true,
-      playground: {
-        presets: ["ts", "vue"],
-      },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommended",
@@ -130,10 +108,46 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
-      vuePlayground: true,
-    },
 
-    // uncomment these if you want a pwa
+      // 在启用之前安装 chart.js
+      // chart: true,
+
+      // insert component easily
+
+      // 在启用之前安装 echarts
+      // echarts: true,
+
+      // 在启用之前安装 flowchart.ts
+      // flowchart: true,
+
+      // gfm requires mathjax-full to provide tex support
+      // gfm: true,
+
+      // 在启用之前安装 katex
+      // katex: true,
+
+      // 在启用之前安装 mathjax-full
+      // mathjax: true,
+
+      // 在启用之前安装 mermaid
+      // mermaid: true,
+
+      // playground: {
+      //   presets: ["ts", "vue"],
+      // },
+
+      // 在启用之前安装 reveal.js
+      // revealJs: {
+      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+      // },
+
+      // 在启用之前安装 @vue/repl
+      // vuePlayground: true,
+
+      // install sandpack-vue3 before enabling it
+      // sandpack: true,
+    },
+    // 如果你需要 PWA。安装 vuepress-plugin-pwa2 并取消下方注释
     // pwa: {
     //   favicon: "/favicon.ico",
     //   cacheHTML: true,

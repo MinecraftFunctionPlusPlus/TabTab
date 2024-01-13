@@ -12,7 +12,7 @@ export default defineUserConfig({
     })
   ],
 
-  base: "/tabtab/",
+  base: "/TabTab/",
 
   locales: {
     "/": {
